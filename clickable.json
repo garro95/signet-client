@@ -3,7 +3,7 @@
     "scripts": {
         "fetch": "git submodule update --init"
     },
-    "dependencies_host": [
+    "dependencies_target": [
 	"qt5-default",
 	"qtbase5-dev",
 	"libxkbcommon-dev",
