@@ -1,0 +1,26 @@
+{
+    "builder": "qmake",
+    "scripts": {
+        "fetch": "git submodule update --init"
+    },
+    "dependencies_host": [
+	"qt5-default",
+	"qtbase5-dev",
+	"libxkbcommon-dev",
+	"libmircommon-dev",
+	"libmirclient-dev",
+	"libegl1-mesa-dev",
+	"libgles2-mesa-dev",
+	"libqt5webkit5-dev",
+	"libqt5websockets5-dev",
+	"libqt5x11extras5-dev",
+	"libgcrypt20-dev",
+	"zlib1g-dev",
+	"libx11-dev"
+
+    ],
+    "build_args": [
+	"${SRC_DIR}/client/client.pro",
+	"CONFIG+=release"
+    ]
+}
